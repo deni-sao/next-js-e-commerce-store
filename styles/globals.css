@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -22,5 +22,24 @@ a {
   body {
     color: white;
     background: black;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #__next {
+    @apply h-full
+    antialiased
+    bg-gradient-to-r
+    from-pink-300
+    via-orange-200
+    to-yellow-100;
+  }
+  html,
+  body {
+    @apply h-full;
   }
 }
